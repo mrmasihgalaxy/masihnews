@@ -1,15 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>ورود</title>
+  <style>
+    body {
+      background-color: #fff8dc;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    h2 {
+      color: darkgoldenrod;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: inline-block;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+    }
+
+    label {
+      color: darkgoldenrod;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid goldenrod;
+      border-radius: 6px;
+      background-color: #fff8dc;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      background-color: gold;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkgoldenrod;
+      color: white;
+    }
+  </style>
 </head>
-<body style="text-align: center;">
-  <h2 style="color: darkgoldenrod;">برای نظر دادن وارد شوید</h2>
+<body>
+  <h2>برای نظر دادن وارد شوید</h2>
   <form action="/login" method="post">
-    <label style="color: darkgoldenrod;" for="username">نام کاربری:</label><br>
-    <input style="background-color: gold;" type="text" id="username" name="username"><br><br>
+    <label for="username">نام کاربری</label>
+    <input type="text" id="username" name="username">
 
-    <label style="color: darkgoldenrod;" for="password">رمز عبور:</label><br>
-    <input style="background-color: gold;" type="password" id="password" name="password"><br><br>
-
-    <input style=" border-radius: 60px ; background: gold;" type="submit" value="ورود">
-    
-    </body>
+    <label for="password">رمز عبور </label>
+    <input type="password" id="password" name="password">
+     <input type="submit" value="ساخت حساب">
+    <input type="submit" value="ورود">
+  </form>
+</body>
+</html>
